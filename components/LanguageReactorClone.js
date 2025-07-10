@@ -943,12 +943,4 @@ const LanguageReactorClone = () => {
   );
 };
 
-export default LanguageReactorClone; setShowDualSubtitles(!showDualSubtitles)}
-                      className={`text-xs px-2 py-1 rounded ${
-                        showDualSubtitles ? 'bg-blue-500 text-white' : 'bg-gray-200 text-gray-600'
-                      }`}
-                    >
-                      Dual Subs
-                    </button>
-                    <button
-                      onClick={() =>
+export default LanguageReactorClone;
