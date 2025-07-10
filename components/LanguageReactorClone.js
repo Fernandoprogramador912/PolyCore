@@ -733,6 +733,14 @@ const LanguageReactorClone = () => {
                   <h3 className="font-semibold">Interactive Transcript</h3>
                   <div className="flex items-center space-x-2">
                     <button
+                      onClick={() => setShowDualSubtitles(!showDualSubtitles)}
+                      className={`text-xs px-2 py-1 rounded ${
+                        showDualSubtitles ? 'bg-blue-500 text-white' : 'bg-gray-200 text-gray-600'
+                      }`}
+                    >
+                      Dual Subs
+                    </button>
+                    <button
                       onClick={() => setAutoPause(!autoPause)}
                       className={`text-xs px-2 py-1 rounded ${
                         autoPause ? 'bg-green-500 text-white' : 'bg-gray-200 text-gray-600'
