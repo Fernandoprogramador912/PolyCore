@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Custom scrollbar for transcript */
+.transcript-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.transcript-scroll::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.transcript-scroll::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+.transcript-scroll::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Smooth transitions */
+.segment-transition {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Highlight animations */
+@keyframes highlight {
+  0% { background-color: transparent; }
+  50% { background-color: #dbeafe; }
+  100% { background-color: transparent; }
+}
+
+.word-highlight {
+  animation: highlight 0.5s ease-in-out;
+}
